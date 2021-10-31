@@ -1,12 +1,3 @@
-# encoding: utf-8
-#
-# Программа «Блокнот», демонстрирующая наследование классов в ruby.
-# Версия 2.0, хранящая свои данные в базе данных SQLite
-# Этот скрипт создает новые записи, чтением занимается другой скрипт
-#
-# (с) goodprogrammer.ru
-#
-# Этот код необходим только при использовании русских букв на Windows
 if Gem.win_platform?
   Encoding.default_external = Encoding.find(Encoding.locale_charmap)
   Encoding.default_internal = __ENCODING__
@@ -50,5 +41,4 @@ entry.read_from_console
 rowid = entry.save_to_db
 
 puts "Запись сохранена в базе, id = #{rowid}"
-#
-# Как обычно, при использовании классов программа выглядит очень лаконично!
+
